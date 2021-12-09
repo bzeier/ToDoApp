@@ -19,15 +19,33 @@
         <StackPanel Grid.Column="0">
             <Label Margin="10,10,5,5">Add new To Do</Label>
             <Label>Title</Label>
-            <TextBlock Grid.Column="0" Background="gray" ></TextBlock>
+            <TextBox Name="input_title" Grid.Column="0" Background="gray" ></TextBox>
             <Label>Description</Label>
-            <TextBlock Grid.Column="0" Background="gray" Height="60" ></TextBlock>
+            <TextBox Name="input_desc"  Grid.Column="0" Background="gray" Height="60" ></TextBox>
             <Button Background="lime" Click="Button_Click_Add">Add</Button>
             <Button Background="red" Click="Button_Click_Remove">Remove</Button>
         </StackPanel>
 
-        <ItemsControl Name="ItemControlRef" Grid.Column="1" ItemsSource="{Binding ToDoItems}">
+        <ItemsControl Name="ItemControlRef" Grid.Column="1" ItemsSource="{Binding ToDoItems}" Margin="20,20,20,20">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="2" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="5,5,5,5" Height="150" Width="250" Background="gray">
+                        <TextBlock Margin="15,15,15,15" Text="{Binding Title}"></TextBlock>
+                        <Border Height="25"></Border>
+                        <TextBlock Margin="10,10,10,90" Text="{Binding Description}"></TextBlock>
+                        <Border Height="35"></Border>
+                        <Button>Remove</Button>
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
 
         </ItemsControl>
+
     </Grid>
 </Window>

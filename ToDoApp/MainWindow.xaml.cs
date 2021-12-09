@@ -31,7 +31,10 @@ namespace ToDoApp
 
         private void Button_Click_Add(object sender, RoutedEventArgs e)
         {
-            ToDoManager.AddToDoItem("Title", "Description - - - - - - ");
+            ToDoManager.AddToDoItem(input_title.Text, input_desc.Text);
+            input_title.Text = "";
+            input_desc.Text = "";
+            ItemControlRef.ItemsSource = ToDoManager.ToDoItems;
         }
 
         private void Button_Click_Remove(object sender, RoutedEventArgs e)

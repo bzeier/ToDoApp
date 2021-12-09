@@ -16,7 +16,7 @@ namespace ToDoApp
     {
         public App()
         {
-            ToDoManager.AddToDoItem("Title","213112");
+            ToDoManager.AddToDoItem("Finish TO-DO Application","Lorem ipsum implement UI/UX ");
         }
     }
 }
