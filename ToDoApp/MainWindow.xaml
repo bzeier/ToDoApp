@@ -1,0 +1,28 @@
+﻿<Window x:Class="ToDoApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToDoApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Label Margin="10,10,5,5">Add new To Do</Label>
+            <Label>Title</Label>
+            <TextBlock Grid.Column="0" Background="gray" > </TextBlock>
+            <Label>Description</Label>
+            <TextBlock Grid.Column="0" Background="gray" Height="60" ></TextBlock>
+            <Button Background="lime" Click="Button_Click_Add">Add</Button>
+            <Button Background="red" Click="Button_Click_Remove">Remove</Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Margin="15,15,15,15" Background="black">
+            
+        </StackPanel>
+    </Grid>
+</Window>
