@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using ToDoApp.Services;
 
 namespace ToDoApp
 {
@@ -13,5 +14,9 @@ namespace ToDoApp
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            ToDoManager.AddToDoItem("Title","213112");
+        }
     }
 }

@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ToDoApp.Services;
+using System.Collections.ObjectModel;
+using ToDoApp.Models;
 
 namespace ToDoApp
 {
@@ -20,6 +23,7 @@ namespace ToDoApp
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -27,7 +31,7 @@ namespace ToDoApp
 
         private void Button_Click_Add(object sender, RoutedEventArgs e)
         {
-
+            ToDoManager.AddToDoItem("Title", "Description - - - - - - ");
         }
 
         private void Button_Click_Remove(object sender, RoutedEventArgs e)

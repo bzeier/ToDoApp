@@ -19,3 +19,4 @@ D:\Software Engineering\ToDoApp\ToDoApp\obj\Debug\net6.0-windows\ToDoApp.dll
 D:\Software Engineering\ToDoApp\ToDoApp\obj\Debug\net6.0-windows\ref\ToDoApp.dll
 D:\Software Engineering\ToDoApp\ToDoApp\obj\Debug\net6.0-windows\ToDoApp.pdb
 D:\Software Engineering\ToDoApp\ToDoApp\obj\Debug\net6.0-windows\ToDoApp.genruntimeconfig.cache
+D:\Software Engineering\ToDoApp\ToDoApp\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
